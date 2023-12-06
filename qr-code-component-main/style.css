@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: hsl(212, 45%, 89%);
+    padding: 20px 0;
+}
+.box-container{
+    display: grid;
+    place-items: center;
+    font-family: 'Outfit','Courier New';
+    height: 100dvh;
+}
+.box{
+    max-width: 200px;
+    max-height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.box img{
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.box h4{
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+.box p{
+    color:hsl(220, 15%, 55%) ;
+    font-size: 12px;
+}
+.container-narrow{
+    max-width: 18rem;
+}
+@media (max-width:375px){
+    .box{
+        max-width: 90%;
+        font-size: 1.5rem;
+    }
+    .box p{
+        font-size: 1.05rem;
+    }
+
+    
+}
